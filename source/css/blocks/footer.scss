@@ -9,15 +9,16 @@
 .footer__content {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	gap: 40px;
+	justify-content: flex-start;
+	gap: 85px;
 	width: 100%;
-	max-width: 1169px;
+	max-width: 1170px;
 	margin: 0 auto;
 }
 
 .footer__copy {
+	display: flex;
+	align-items: center;
 	margin: 0;
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
@@ -26,23 +27,38 @@
 
 .footer__content > div {
 	position: relative;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
 }
 
-.footer__content > div:not(:last-child)::after {
+.footer__copy::after,
+.footer__pays::after {
 	content: '';
 	position: absolute;
 	top: 0;
-	right: -40px;
 	display: inline-block;
 	width: 1px;
 	height: 18px;
 	background-color: #C3C3C3;
 }
 
+.footer__copy::after {
+	right: -45px;
+}
+
+.footer__pays::after {
+	right: -52px;
+}
+
+.footer__copy > p {
+	margin: 0;
+}
+
 .footer__pays {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 22px;
+	gap: 38px;
 }
 
 .footer__pay {
@@ -74,11 +90,14 @@
 .footer__contacts {
 	display: flex;
 	flex-wrap: wrap;
-	// gap: 38px;
+	gap: 47px;
 }
 
 .footer__contact {
 	color: var(--main-color);
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
 }
 
 .footer__contact::before {
