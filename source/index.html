@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>EmployCity</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+	<script type="module" src="js/main.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header__content">
+			<img class="header__logo" src="img/loremipsumnet.svg" alt="Логотип">
+			<nav class="header__nav">
+				<ul class="header__menu menu">
+					<li class="menu__item"><a href="#" class="menu__link">Бизнес</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Оформить заказ</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="hero">
+			<div class="hero__content">
+				<h1 class="hero__heading"><span class="hero__heading_accent">Lorem ipsum</span> dolor sit<br> ametconsectetur <span class="hero__heading_accent">adipiscing</span></h1>
+				<p class="hero__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
+				<ul class="hero__list">
+					<li class="hero__item">Totam rem aperiam eaque ipsa</li>
+					<li class="hero__item">Sit voluptatem accusantium doloremque laudantium</li>
+					<li class="hero__item">Sed ut perspiciatis, unde omnis iste natus error</li>
+				</ul>
+				<div class="hero__actions">
+					<a class="hero__action hero__action_accent-blue" href="">Заказать</a>
+					<a class="hero__action hero__action_accent-white" href="">Подробнее</a>
+				</div>
+			</div>
+		</section>
+		<section class="order">
+			<div class="order__content">
+				<h2 class="order__heading">Оформление <span class="order__heading_accent">Заказа</span></h2>
+				<p class="order__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+				<div class="order__steps steps">
+					<div class="steps__step steps__step_search">
+						<p class="steps__text">Lorem ipsum dolor sit amet</p>
+					</div>
+					<div class="steps__step steps__step_percent">
+						<p class="steps__text">Сonsecteturadipiscing elit</p>
+					</div>
+					<div class="steps__step steps__step_file">
+						<p class="steps__text">Sed do eiusmod tempor</p>
+					</div>
+					<div class="steps__step steps__step_message">
+						<p class="steps__text">Esse cillum dolore eu fugiat</p>
+					</div>
+					<div class="steps__step steps__step_money">
+						<p class="steps__text">Excepteur sint occaecat cupidatat non proident</p>
+					</div>
+				</div>
+				<form class="order__filter filter" action="#" method="get">
+					<select class="filter__input filter__system" name="system-select" id="system-select" required>
+						<option value="">Выберите тип системы</option>
+						<option value="system-1">Sed ut perspiciatis</option>
+						<option value="system-2">Nemo enim ipsam</option>
+						<option value="system-3">Et harum quidem</option>
+						<option value="system-4">Temporibus autem</option>
+						<option value="system-5">Itaque earum rerum</option>
+					</select>
+					<input class="filter__input" type="email" name="email" placeholder="Ваш e-mail" required>
+					<input class="filter__input" type="text" name="name" placeholder="Ваше имя" required>
+					<label class="filter__range range" for="range-input" required>
+						<span>Sed ut perspiciatis, unde omnis iste natus</span>
+						<output class="range__value" id="range-value"></output>
+						<span>%</span>
+						<input class="range__input" type="range" name="range" id="range-input" min="0" max="100" step="1">
+					</label>
+					<label class="filter__file">
+						<span>Прикрепить файл</span>
+						<input type="file" name="file">
+					</label>
+					<button class="filter__input filter__submit" type="submit">Отправить</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<dic class="footer__content">
+			<div>
+				<p class="footer__copy">&copy; 2018 «LoremIpsum.net» Все права защищены.</p>
+			</div>
+			<div class="footer__pays">
+				<p class="footer__pay">Qiwi wallet</p>
+				<p class="footer__pay">Yandex Money</p>
+				<p class="footer__pay">Web Money</p>
+			</div>
+			<div class="footer__contacts">
+				<a class="footer__contact" href="">info@ipsum228.com</a>
+				<a class="footer__contact" href="">Мы вконтакте</a>
+			</div>
+		</dic>
+	</footer>
+</body>
+</html>

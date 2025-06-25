@@ -1,0 +1,17 @@
+:root {
+	--main-color: #FFFFFF;
+	--main-color-2: #2A2B30;
+	--accent-color: #43ABF0;
+	--accent-color-2: #3E9CDC;
+	--accent-color-3: #286690;
+	--back-color: rgba(16, 16, 29, 0.9);
+	--back-color-ligt: #3d4050;
+	--black: #000;
+	--grey-light: #C4C4C4;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

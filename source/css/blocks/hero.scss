@@ -1,0 +1,91 @@
+.hero {
+	background-image: url('/img/hero-back@2x.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	padding: 209px 1em 200px;
+	background-color: var(--main-color);
+}
+
+.hero__content {
+	width: 100%;
+	max-width: 1169px;
+	margin: 0 auto;
+}
+
+.hero__heading {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 48px;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 87px;
+	color: var(--black);
+	line-height: 1.2;
+}
+
+.hero__text {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: var(--black);
+	margin-bottom: 10px;
+}
+
+.hero__heading_accent {
+	color: var(--accent-color);
+}
+
+.hero__list {
+	@include reset-list;
+	padding-left: 1.3em;
+	margin-bottom: 78px;
+}
+
+.hero__item {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: var(--black);
+	margin-bottom: 5px;
+	padding-left: 5px;
+	line-height: 1.2;
+}
+
+.hero__item::marker {
+	content: '- ';
+}
+
+.hero__actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.hero__action {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 183px;
+	min-height: 43px;
+	padding-top: 5px;
+	border-radius: 4px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: var(--main-color);
+	text-decoration: none;
+}
+
+.hero__action_accent-blue {
+	border: 1px solid #fff;
+	background-color: var(--accent-color-2);
+}
+
+.hero__action_accent-white {
+	color: var(--main-color-2);
+	border: 1px solid #6f6d7b;
+	background-color: var(--main-color);
+}

@@ -1,0 +1,17 @@
+/* GLOBAL */
+@import './common/fonts.scss';
+@import './common/normalize.scss';
+@import './common/variables.scss';
+@import './common/global.scss';
+
+/* BLOCKS */
+@import './blocks/header.scss'; 
+@import './blocks/logo.scss'; 
+@import './blocks/menu.scss'; 
+@import './blocks/hero.scss'; 
+@import './blocks/order.scss'; 
+@import './blocks/steps.scss'; 
+@import './blocks/filter.scss'; 
+@import './blocks/footer.scss'; 
+
+@import './blocks/visually-hidden.scss'; 

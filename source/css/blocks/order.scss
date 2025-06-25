@@ -1,0 +1,43 @@
+.order {
+	background-image: url('../../img/world-back@2x.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: var(--back-color);
+	box-sizing: border-box;
+	padding: 125px 1em 151px;
+}
+
+.order__content {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.order__heading {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-size: 36px;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--main-color);
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.order__heading_accent {
+	color: var(--accent-color);
+}
+
+.order__text {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+	color: #bbb;
+	margin: 0;
+	margin-bottom: 80px;
+}
