@@ -19,6 +19,9 @@
 
 .footer__copy {
 	margin: 0;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 13px;
 }
 
 .footer__content > div {
@@ -39,19 +42,58 @@
 .footer__pays {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 38px;
+	gap: 22px;
 }
 
 .footer__pay {
 	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.footer__pay::before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+}
+
+.footer__pay_qiwi::before {
+	background-image: url('/img/qiwi.svg');
+}
+.footer__pay_ym::before {
+	background-image: url('/img/yandex-m.svg');
+}
+.footer__pay_wm::before {
+	background-image: url('/img/web-money.svg');
 }
 
 .footer__contacts {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 38px;
+	// gap: 38px;
 }
 
 .footer__contact {
 	color: var(--main-color);
+}
+
+.footer__contact::before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	background-repeat: no-repeat;
+}
+
+.footer__contact_mail::before {
+	background-image: url('/img/email.svg');
+}
+.footer__contact_vk::before {
+	background-image: url('/img/vk.svg');
 }
