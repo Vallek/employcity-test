@@ -23,6 +23,18 @@
 	color: #272733;
 }
 
+.filter__system {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	-webkit-appearance: none;
+	appearance: none;
+	background-image: url('/img/arrow-down.svg');
+	background-size: 24px;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 8px) center;
+}
+
 .range {
 	display: flex;
 	flex-wrap: wrap;
