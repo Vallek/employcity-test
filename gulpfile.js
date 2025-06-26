@@ -52,7 +52,7 @@ export function processStyles () {
       postUrl([
         {
           filter: '**/*',
-          assetsPath: '../',
+          // assetsPath: '../',
         },
         {
           filter: '**/icons/**/*.svg',
