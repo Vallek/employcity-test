@@ -1,7 +1,9 @@
 .footer {
+	box-sizing: border-box;
 	display: flex;
 	align-items: center;
 	min-height: 80px;
+	padding: 30px;
 	color: var(--main-color);
 	background-color: var(--back-color-ligt);
 }
@@ -14,6 +16,13 @@
 	width: 100%;
 	max-width: 1170px;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 1202px) {
+	.footer__content {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .footer__copy {
@@ -49,6 +58,13 @@
 
 .footer__pays::after {
 	right: -52px;
+}
+
+@media screen and (max-width: 1202px) {
+	.footer__copy::after,
+	.footer__pays::after {
+		display: none;
+	}
 }
 
 .footer__copy > p {

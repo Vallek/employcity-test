@@ -13,6 +13,17 @@
 	margin: 0 auto;
 }
 
+@media screen and (max-width: 768px) {
+	.hero__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.hero__heading {
+		text-align: center;
+	}
+}
+
 .hero__heading {
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
@@ -22,6 +33,14 @@
 	margin-bottom: 87px;
 	color: var(--black);
 	line-height: 1.2;
+	hyphens: auto;
+	word-break: break-word;
+}
+
+@media screen and (max-width: 600px) {
+	.hero__heading {
+		font-size: clamp(2rem, 5vw + 1rem, 5rem);
+	}
 }
 
 .hero__text {
@@ -29,6 +48,7 @@
 	font-weight: 700;
 	font-size: 20px;
 	color: var(--black);
+	margin: 0;
 	margin-bottom: 10px;
 }
 

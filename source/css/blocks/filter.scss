@@ -5,6 +5,13 @@
 	width: 100%;
 }
 
+@media screen and (max-width: 1202px) {
+	.filter {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 .filter__input {
 	box-sizing: border-box;
 	width: 100%;
@@ -41,6 +48,14 @@
 	flex-grow: 1;
 	max-height: 48px;
 	row-gap: 16px;
+	margin-bottom: 34px;
+}
+
+@media screen and (max-width: 1202px) {
+	.range {
+		max-height: initial;
+		min-height: 48px;
+	}
 }
 
 .range__value {
