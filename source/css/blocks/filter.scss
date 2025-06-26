@@ -38,6 +38,32 @@
 .range__input {
 	width: 100%;
 	max-width: 770px;
+
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.range__input::-webkit-slider-runnable-track,
+.range__input::-moz-range-track {
+	box-sizing: border-box;
+	height: 6px;
+	border-radius: 6px;
+	border: 1px solid #fff;
+	background: #ffffffb4;
+}
+
+.range__input::-webkit-slider-thumb,
+.range__input::-moz-range-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 3px solid #286690;
+	background: #42A9ED;
+	margin-top: calc(calc(6px / 2) - calc(24px /2));
 }
 
 .filter__file {
