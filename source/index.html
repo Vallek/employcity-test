@@ -85,12 +85,13 @@
 					</select>
 					<input class="filter__input" type="email" name="email" placeholder="Ваш e-mail" required>
 					<input class="filter__input" type="text" name="name" placeholder="Ваше имя" required>
-					<label class="filter__range range" for="range-input" required>
+					<div class="filter__range range">
 						<span>Sed ut perspiciatis, unde omnis iste natus</span>
-						<output class="range__value" id="range-value"></output>
+						<output class="range__value" for="range-input" id="range-value"></output>
 						<span>%</span>
+						<label for="range-input"></label>
 						<input class="range__input" type="range" name="range" id="range-input" min="0" max="100" step="1" value="75">
-					</label>
+					</div>
 					<label class="filter__file">
 						<span>Прикрепить файл</span>
 						<input type="file" name="file">
@@ -101,7 +102,7 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<dic class="footer__content">
+		<div class="footer__content">
 			<div class="footer__copy">
 				<p>&copy; 2018 «LOREMIPSUM.NET» Все права защищены.</p>
 			</div>
@@ -114,7 +115,7 @@
 				<a class="footer__contact footer__contact_mail" href="">info@ipsum228.com</a>
 				<a class="footer__contact footer__contact_vk" href="">Мы вконтакте</a>
 			</div>
-		</dic>
+		</div>
 	</footer>
 </body>
 </html>
