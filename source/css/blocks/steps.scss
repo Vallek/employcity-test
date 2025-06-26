@@ -33,7 +33,7 @@
 	display: block;
 	width: 110px;
 	height: 1em;
-	background-image: url('/img/ellipses.svg');
+	background-image: url('../img/ellipses.svg');
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -60,19 +60,19 @@
 }
 
 .steps__step_search::before {
-	background-image: url('/img/search.svg');
+	background-image: url('../img/search.svg');
 }
 .steps__step_percent::before {
-	background-image: url('/img/percent.svg');
+	background-image: url('../img/percent.svg');
 }
 .steps__step_file::before {
-	background-image: url('/img/file.svg');
+	background-image: url('../img/file.svg');
 }
 .steps__step_message::before {
-	background-image: url('/img/message.svg');
+	background-image: url('../img/message.svg');
 }
 .steps__step_money::before {
-	background-image: url('/img/money.svg');
+	background-image: url('../img/money.svg');
 }
 
 .steps__text {
