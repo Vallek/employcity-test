@@ -12,6 +12,12 @@
 }
 
 // Dropdown menu
+@media screen and (min-width: 769px) {
+	.header__dropdown {
+		display: none;
+	}
+}
+
 .dropdown__button {
 	display: none;
 	width: 40px;
