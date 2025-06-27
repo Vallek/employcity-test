@@ -1,4 +1,6 @@
 .hero {
+	position: relative;
+	z-index: 1;
 	background-image: url('../img/hero-back@2x.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -11,6 +13,16 @@
 	width: 100%;
 	max-width: 1169px;
 	margin: 0 auto;
+	animation: hero-start 0.8s ease-out 0.1s 1 forwards;
+}
+
+@keyframes hero-start {
+	0% {
+		transform: translateY(200px);
+	}
+	100% {
+		transform: translateY(0%);
+	}
 }
 
 @media screen and (max-width: 768px) {

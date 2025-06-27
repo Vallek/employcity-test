@@ -1,4 +1,6 @@
 .order {
+	position: relative;
+	z-index: 2;
 	background-image: url('../img/world-back@2x.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -14,6 +16,17 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	animation: hero-start 0.8s ease-out 0.1s 1 forwards;
+}
+
+
+@keyframes hero-start {
+	0% {
+		transform: translateY(200px);
+	}
+	100% {
+		transform: translateY(0%);
+	}
 }
 
 .order__heading {
