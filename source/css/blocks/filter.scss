@@ -130,14 +130,18 @@
 	background-position: center;
 }
 
-.filter__file > input[type="file"] {
-	display: none;
+.filter__file:focus-within {
+	outline: auto;
 }
 
 .filter__submit {
 	margin: 0 auto;
 	color: var(--main-color);
 	background: var(--accent-color-2);
+}
+
+.filter__submit:focus {
+	outline: auto;
 }
 
 .filter__submit:hover {
