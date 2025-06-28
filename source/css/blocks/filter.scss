@@ -42,6 +42,11 @@
 	background-position: calc(100% - 8px) center;
 }
 
+.filter__system:focus {
+	color: var(--main-color);
+	background-color: rgba(39, 39, 51, 0.9);
+}
+
 .range {
 	display: flex;
 	flex-wrap: wrap;
