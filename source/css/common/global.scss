@@ -3,6 +3,10 @@ body {
 	color: var(--main-color);
 }
 
+main {
+	z-index: 1;
+}
+
 img {
 	max-width: 100%;
 }
