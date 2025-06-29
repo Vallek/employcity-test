@@ -1,7 +1,7 @@
 .steps {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-self: stretch;
 	gap: 30px;
 	margin-bottom: 85px;
@@ -24,7 +24,7 @@
 	max-width: 209px;
 }
 
-.steps__step:not(:last-child)::after {
+.steps__step:not(:nth-child(5n))::after {
 	content: '';
 	position: absolute;
 	transform: translate(65%, -50%);
@@ -38,7 +38,12 @@
 	background-position: center;
 }
 
-@media screen and (max-width: 1200px) {
+.steps__step:last-child::after {
+	display: none;
+}
+
+@media screen and (max-width: 1202px) {
+	.steps__step:not(:nth-child(5n))::after,
 	.steps__step:not(:last-child)::after {
 		display: none;
 	}
