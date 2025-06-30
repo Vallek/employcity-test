@@ -76,6 +76,7 @@
 					</div>
 				</div>
 				<form class="order__filter filter" action="#" method="get">
+					<label class="visually-hidden" for="system-select">Выберите систему</label>
 					<select class="filter__input filter__system" name="system-select" id="system-select" required>
 						<option value="">Выберите тип системы</option>
 						<option value="system-1">Sed ut perspiciatis</option>
@@ -90,7 +91,7 @@
 						<span>Sed ut perspiciatis, unde omnis iste natus</span>
 						<output class="range__value" for="range-input" id="range-value"></output>
 						<span>%</span>
-						<label for="range-input"></label>
+						<label class="visually-hidden" for="range-input">Выберите значение</label>
 						<input class="range__input" type="range" name="range" id="range-input" min="0" max="100" step="1" value="75">
 					</div>
 					<label class="filter__file">
