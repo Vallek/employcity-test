@@ -87,6 +87,7 @@
 
 .footer__pay::before {
 	content: '';
+	flex-shrink: 0;
 	display: inline-block;
 	vertical-align: middle;
 	width: 20px;
